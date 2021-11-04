@@ -1,0 +1,74 @@
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir hello1
+
+3) Зайти в папку
+cd hello1
+
+4) Создать 3 папки
+mkdir d_1 d_2 d_3
+
+5) Зайти в любоую папку
+cd d_1
+
+6) Создать 5 файлов (3 txt, 2 json)
+> text1.txt
+> text2.txt
+> text3.txt
+touch post1.json
+touch get1.json
+
+7) Создать 3 папки
+mkdir c_1 c_2 c_3
+
+8. Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+vim text1.txt
+
+10) + написать туда что-нибудь, любой текст.
+I - режим редактирования
+
+11) + сохранить и выйти.
+:wq
+
+12) Выйти из папки на уровень выше
+cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+> textone.txt
+> texttwo.txt
+mv textone.txt d_1/textone.txt
+mv texttwo.txt d_2/texttwo.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp text1.txt text1copy.txt
+cp text1.txt c_1/text1copy.txt
+
+15) Найти файл по имени
+find text1.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f text1.txt
+
+17) вывести несколько первых строк из текстового файла
+head -n2 text1.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -2 text1.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less text1.txt (стрелочкам менять строки, PageUpDown менять страницы, Space страница вниз, b страница вверх) q выход
+
+20) вывести дату и время
+date
+
+21) Отправить http запрос на сервер.
+curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+
+22) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+cd script;mkdir 1 2 3;cd 1;>text1.txt;>text2.txt;>text3.txt;touch post1.json;touch get1.json;mkdir 4 5 6;mv text1.txt E:/qa/lesson1_terminal/script;
+mv text2.txt E:/qa/lesson1_terminal/script

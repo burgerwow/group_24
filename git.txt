@@ -1,0 +1,5 @@
+git clone ссылка
+gitggit status
+git add файл
+git commit -m "комменатрий" - точка куда можно вернутся
+git push
